@@ -21,7 +21,7 @@ After that, you will need to create a key accessto access the API. You can creat
 >* You can creates an environment variable in your Xcode Project: **Product** -> **Scheme** -> **Edit Scheme...** -> **Environment Variables** with this format: **(Name: "API", Value: "Your key access")**
 >
 >* You can create a file with the name: **"apiKey.json"** and in there put: **{
-"key":"Your key access" }**
+"key":"Your key access" }**. Save this file at Documents.
 
 After that, open this project in Xcode and have fun! Executing the code, you will see anything like this: 
 
