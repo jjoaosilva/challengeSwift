@@ -23,17 +23,16 @@ struct ManageInterface{
         let inputUser: String? = readLine()
         print("\n")
 
-        let filteredText: String! = removeCharactersInvalids(text: inputUser!)
-        
-        if filteredText == "" {
+        guard let filteredText = removeCharactersInvalids(text: inputUser!),
+            filteredText != "" else {
             return nil
         }
         
-        return (inputUser!, filteredText!)
+        return (inputUser!, filteredText)
     }
     
     // Removes all charecters invalids and swap the spaces for %20
-    func removeCharactersInvalids(text: String) -> String {
+    func removeCharactersInvalids(text: String) -> String? {
        let withoutCharactersInvalids = matches(for: "[0-9A-Za-z ]", in: text).joined(separator: "")
        
        return withoutCharactersInvalids.replacingOccurrences(of: " ", with: "%20")
