@@ -51,7 +51,7 @@ Font:  https://www.nytimes.com/aponline/2020/04/01/health/ap-us-med-virus-outbre
 
 ### Script bash
 
-You can paste the file Structs.swift at the beginning of the file main.swift and in the other file script.swift put them.
+You can copy all files of the project and in the other file script.swift put them.
 
 **Note** : remember write in the first line `#!/usr/bin/swift`
 
