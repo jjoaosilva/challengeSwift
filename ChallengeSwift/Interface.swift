@@ -1,6 +1,6 @@
 import Foundation
 
-enum Mensages : String {
+enum Messages : String {
     case welcome = "Welcome to BashNews!\n"
     case enterSearch = "Enter your search: "
 }
@@ -8,7 +8,7 @@ enum Mensages : String {
 struct ManageInterface{
     
     func welcome(){
-        print(Mensages.welcome.rawValue)
+        print(Messages.welcome.rawValue)
     }
     
     func formatResponse(date: String, abstract: String, snippet: String, webUrl: String){
@@ -19,7 +19,7 @@ struct ManageInterface{
     }
     
     func manageInputUser() -> (inputUser: String, inputFiltered: String)? {
-        print(Mensages.enterSearch.rawValue, terminator: "")
+        print(Messages.enterSearch.rawValue, terminator: "")
         let inputUser: String? = readLine()
         print("\n")
 
